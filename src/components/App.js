@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 import useVideos from '../hooks/useVideos';
-import { useEffect } from 'react/cjs/react.development';
+
 
 
 
@@ -14,7 +14,7 @@ const App = () => {
     
     useEffect(() => {
         setSelectedVideo(videos[0]);
-    }, [videos])
+    }, [videos]);
 
 
 
